@@ -1,0 +1,27 @@
+{
+  "name": "flutter-gradient-blog",
+  "version": "0.1.0",
+  "private": true,
+  "main": "function.js",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "export": "next build && next export",
+    "deploy": "yarn build && cross-env NODE_ENV=production firebase deploy --only functions,hosting"
+  },
+  "dependencies": {
+    "@emotion/core": "^11.0.0",
+    "@emotion/styled": "^11.3.0",
+    "next": "11.0.1",
+    "next-optimized-images": "^2.6.2",
+    "react": "17.0.2",
+    "react-dom": "17.0.2",
+    "react-draggable": "^4.4.3"
+  },
+  "devDependencies": {
+    "eslint": "7.29.0",
+    "eslint-config-next": "11.0.1"
+  }
+}

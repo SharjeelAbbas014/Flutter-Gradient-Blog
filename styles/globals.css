@@ -1,0 +1,242 @@
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.cards {
+  box-shadow: 5px 5px 20px #5f5f5f7c;
+  flex: 0 0 20.333333%;
+  margin: 20px;
+  height: 300px;
+  width: 200px;
+  position: relative;
+  border-radius: 10px;
+  overflow: hidden;
+  cursor: pointer;
+}
+#card-container {
+  width: max-content;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  padding-left: 0;
+}
+@media screen and (max-width: 1150px) {
+  .cards {
+    flex: 0 0 30.333333%;
+  }
+}
+@media screen and (max-width: 820px) {
+  .cards {
+    flex: 0 0 100%;
+  }
+  #card-container {
+    width: 80vw;
+    margin: 0 auto;
+  }
+}
+.cards a div {
+  width: auto;
+  height: 100%;
+  width: 100%;
+}
+.cards h2 {
+  position: absolute;
+  bottom: 20px;
+  z-index: 10;
+  color: #fff;
+  padding-left: 20px;
+  max-width: 90%;
+}
+.cards img {
+  height: 100% !important;
+  position: absolute;
+  width: auto !important;
+  min-width: auto !important;
+  max-width: none !important;
+  top: 0;
+  left: 0;
+}
+.image-container {
+  background: linear-gradient(to top, #003f7a, #b5d5ff5b);
+  position: absolute;
+  z-index: 5;
+  width: 100% !important;
+  height: 100% !important;
+}
+
+#blog-page h1 {
+  text-align: center;
+}
+#blog-page img {
+  padding: 30px;
+}
+#blog-page p {
+  width: 70%;
+  padding: 0 40px;
+}
+
+#navbar {
+  height: 8vh;
+  background: #003f7a;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+#navbar a {
+  color: #fff;
+  font-weight: bold;
+}
+
+#blog-container-page div {
+  width: 100%;
+  height: 100%;
+}
+#blog-container-page img {
+  padding: 30px !important;
+  height: auto !important;
+  width: 100% !important;
+  min-width: auto !important;
+}
+
+/* APP */
+#mainContent {
+  width: 80%;
+  height: 200px;
+  box-shadow: 0 0 30px rgba(138, 138, 138, 0.493);
+  margin: 0 auto;
+  margin-top: 150px;
+  border-radius: 20px;
+  z-index: 200;
+  background: #fff;
+}
+h1 {
+  color: #fff;
+  font: "Montserrat";
+  font-weight: 300;
+  text-align: center;
+  font-size: 40px;
+  margin-top: 40px;
+}
+#backColor {
+  z-index: -1;
+  height: 200px;
+  margin-top: 8vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+}
+#directions {
+  display: flex;
+  width: 70%;
+  margin: auto;
+  margin-top: 80px;
+  justify-content: space-evenly;
+}
+.iconContainer {
+  background: #fff;
+  border: #999999 1px solid;
+  border-radius: 200px;
+  width: 25px;
+  height: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+#directions div img {
+  width: 10px;
+}
+#selected {
+  background: linear-gradient(
+    to right,
+    rgb(252, 119, 251) 10%,
+    rgb(238, 153, 68) 90%
+  );
+  border: none;
+  box-shadow: 5px 5px 20px #72727279;
+}
+
+#ColorBox {
+  width: 10px;
+  height: 80px;
+  position: absolute;
+  transform: translate(0, -20px);
+  border-radius: 20px;
+  border: 3px solid #fff;
+  box-shadow: 0px 0px 10px rgb(138, 138, 138);
+}
+
+#incode {
+  overflow: auto;
+  background-color: rgb(236, 236, 236);
+  width: 300px;
+  padding: 10px 20px;
+  border-radius: 10px;
+  height: 150px;
+}
+#code {
+  margin: auto;
+  margin-top: 40px;
+  width: max-content;
+  position: relative;
+}
+
+#copyBut {
+  position: absolute;
+  top: 0;
+  color: blue;
+  background-color: transparent;
+  border-radius: 20px;
+  margin: 5px;
+  font-family: "Montserrat";
+  font-weight: 800;
+  border: 1px solid blue;
+  cursor: pointer;
+}
+#lineBar {
+  height: 60px;
+  width: 80%;
+  margin: 0 auto;
+  transform: translate(0px, 50px);
+  border-radius: 10px;
+}
+
+.d0 {
+  transform: rotate(0deg);
+}
+.d45 {
+  transform: rotate(45deg);
+}
+.d90 {
+  transform: rotate(90deg);
+}
+.d135 {
+  transform: rotate(135deg);
+}
+.d180 {
+  transform: rotate(180deg);
+}
+.d225 {
+  transform: rotate(225deg);
+}
+.d270 {
+  transform: rotate(270deg);
+}
+.d315 {
+  transform: rotate(315deg);
+}
