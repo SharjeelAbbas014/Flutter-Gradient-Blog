@@ -2,12 +2,11 @@ import "../styles/globals.css";
 import Navbar from "../Components/Navbar";
 import Head from "next/head";
 import { useEffect } from "react";
+import { analytics } from "../firebase";
 
 function MyApp({ Component, pageProps }) {
   useEffect(() => {
-    if (process.env.NODE_ENV === "production") {
-      analytics();
-    }
+    analytics();
   }, []);
   return (
     <div>
