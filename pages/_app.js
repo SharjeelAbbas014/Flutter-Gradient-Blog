@@ -19,9 +19,6 @@ function MyApp({ Component, pageProps }) {
           content="As a free flutter gradient generator tool, this website lets you create a colorful gradient background for your mobile app, webiste, and your awesome flutter project"
         />
         <title>Flutter Gradient Tool - Easily Create Gradient In Flutter</title>
-        <script>
-          firebase.initializeApp(firebaseConfig); firebase.analytics();
-        </script>
       </Head>
       <Navbar />
       <Component {...pageProps} />
