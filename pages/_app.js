@@ -4,7 +4,7 @@ import Head from "next/head";
 import { useEffect } from "react";
 
 function MyApp({ Component, pageProps }) {
-  useEffectect(() => {
+  useEffect(() => {
     if (process.env.NODE_ENV === "production") {
       analytics();
     }
