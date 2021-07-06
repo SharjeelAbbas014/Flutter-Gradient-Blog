@@ -1,8 +1,28 @@
 import "../styles/globals.css";
 import Navbar from "../Components/Navbar";
+import Head from "next/head";
+import { useEffect } from "react";
+
 function MyApp({ Component, pageProps }) {
+  useEffectect(() => {
+    if (process.env.NODE_ENV === "production") {
+      analytics();
+    }
+  }, []);
   return (
     <div>
+      <Head>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta name="theme-color" content="#000000" />
+        <meta
+          name="description"
+          content="As a free flutter gradient generator tool, this website lets you create a colorful gradient background for your mobile app, webiste, and your awesome flutter project"
+        />
+        <title>Flutter Gradient Tool - Easily Create Gradient In Flutter</title>
+        <script>
+          firebase.initializeApp(firebaseConfig); firebase.analytics();
+        </script>
+      </Head>
       <Navbar />
       <Component {...pageProps} />
     </div>
