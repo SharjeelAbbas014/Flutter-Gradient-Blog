@@ -19,7 +19,7 @@ function MyApp({ Component, pageProps }) {
         />
         <title>Flutter Gradient Tool - Easily Create Gradient In Flutter</title>
         <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5981409429859170"
-          crossorigin="anonymous"></script>
+        ></script>
       </Head>
       <Navbar />
       <Component {...pageProps} />
