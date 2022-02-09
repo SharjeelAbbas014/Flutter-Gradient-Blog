@@ -118,7 +118,7 @@ function App() {
               id="linear"
               onClick={() => setGradientType("linear")}
             />
-            <label for="linear" className="typeText">
+            <label htmlFor="linear" className="typeText">
               Linear
             </label>
           </div>
@@ -129,7 +129,7 @@ function App() {
               id="radial"
               onClick={() => setGradientType("radial")}
             />
-            <label for="radial" className="typeText">
+            <label htmlFor="radial" className="typeText">
               Radial
             </label>
           </div>
