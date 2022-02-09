@@ -115,7 +115,7 @@ a {
 /* APP */
 #mainContent {
   width: 80%;
-  height: 200px;
+  height: 250px;
   box-shadow: 0 0 30px rgba(138, 138, 138, 0.493);
   margin: 0 auto;
   margin-top: 150px;
@@ -134,7 +134,7 @@ h1 {
 #backColor {
   z-index: -1;
   height: 200px;
-  margin-top: 8vh;
+  /* margin-top: 8vh; */
   position: absolute;
   top: 0;
   left: 0;
@@ -239,4 +239,18 @@ h1 {
 }
 .d315 {
   transform: rotate(315deg);
+}
+
+#gradientType {
+  margin: 10px auto;
+  width: max-content;
+  display: flex;
+  padding-top: 20px;
+  /* margin-top: 20px; */
+}
+#gradientType div {
+  margin: 0 20px;
+}
+.typeText {
+  font-size: 18px;
 }
