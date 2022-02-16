@@ -1,6 +1,8 @@
 import "../styles/globals.css";
 import Navbar from "../Components/Navbar";
 import Head from "next/head";
+import Image from "next/image";
+import bmc from "../bmc_icon_black.png";
 import { useEffect } from "react";
 import { analytics } from "../firebase";
 
@@ -26,6 +28,29 @@ function MyApp({ Component, pageProps }) {
       </Head>
       {/* <Navbar /> */}
       <Component {...pageProps} />
+      {/*  */}
+      <div className="icons">
+        <a
+          target="_blank"
+          href="https://www.linkedin.com/in/sharjeelabbasdev/"
+          rel="noopener noreferrer"
+          className="linkedin"
+        >
+          <Image
+            src="https://cdn.icon-icons.com/icons2/2428/PNG/512/linkedin_black_logo_icon_147114.png"
+            width={30}
+            height={30}
+          />
+        </a>
+        <a
+          target="_blank"
+          href="https://www.buymeacoffee.com/sharjeelabbas"
+          rel="noopener noreferrer"
+          className="bmc"
+        >
+          <Image src={bmc} width={24} height={30} />
+        </a>
+      </div>
     </div>
   );
 }

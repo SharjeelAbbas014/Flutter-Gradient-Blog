@@ -254,3 +254,18 @@ h1 {
 .typeText {
   font-size: 18px;
 }
+
+.icons {
+  position: absolute;
+  bottom: 30px;
+  right: 30px;
+  width: 130px;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row-reverse;
+  background-color: white;
+  padding: 10px 20px;
+  align-items: center;
+  border-radius: 30px;
+  box-shadow: #b9b9b9 2px 2px 30px;
+}
